@@ -3,9 +3,11 @@ services:
     name: test-feature-app
     runtime: ruby
     buildCommand: bundle install
-    startCommand: bundle exec rails server -p $PORT
+    startCommand: bundle exec rails db:migrate && bundle exec rails server -p $PORT -e production
     envVars:
       - key: RAILS_ENV
         value: production
       - key: RAILS_MASTER_KEY
-        sync: false 
+        sync: false
+      - key: RAILS_SERVE_STATIC_FILES
+        value: "true" 
