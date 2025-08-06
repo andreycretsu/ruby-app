@@ -4,9 +4,9 @@
     "builder": "NIXPACKS"
   },
   "deploy": {
-    "startCommand": "bundle exec rails server -p $PORT",
-    "healthcheckPath": "/",
-    "healthcheckTimeout": 100,
+    "startCommand": "bundle exec rails server -p $PORT -e production",
+    "healthcheckPath": "/up",
+    "healthcheckTimeout": 300,
     "restartPolicyType": "ON_FAILURE",
     "restartPolicyMaxRetries": 10
   }
