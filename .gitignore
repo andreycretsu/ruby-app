@@ -1,0 +1,129 @@
+# See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
+
+# dependencies
+/node_modules
+/yarn-error.log
+
+# Ignore all logfiles and tempfiles.
+/log/*
+/tmp/*
+!/log/.keep
+!/tmp/.keep
+
+# Ignore pidfiles, but keep the directory.
+/tmp/pids/*
+!/tmp/pids/
+!/tmp/pids/.keep
+
+# Ignore uploaded files in development.
+/storage/*
+!/storage/.keep
+/tmp/storage/*
+!/tmp/storage/
+!/tmp/storage/.keep
+
+# Ignore master key for decrypting credentials and more.
+/config/master.key
+
+# Ignore application configuration
+/config/application.yml
+
+# Ignore all of the cache files
+/tmp/cache/*
+!/tmp/cache/.keep
+
+# Ignore all of the sockets
+/tmp/sockets/*
+!/tmp/sockets/.keep
+
+# Ignore all of the pids
+/tmp/pids/*
+!/tmp/pids/.keep
+
+# Ignore all of the bootsnap files
+/tmp/cache/bootsnap/*
+
+# Ignore environment variables
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# Ignore database files
+*.sqlite3
+*.sqlite3-*
+
+# Ignore coverage reports
+/coverage/
+
+# Ignore bundle config
+/.bundle
+
+# Ignore all .byebug_history files
+.byebug_history
+
+# Ignore node_modules
+node_modules/
+
+# Ignore precompiled javascript packs
+/public/packs
+/public/packs-test
+
+# Ignore yarn files
+.yarn-integrity
+
+# Ignore uploaded files in development
+/storage/*
+!/storage/.keep
+
+# Ignore master key for decrypting credentials and more
+/config/master.key
+
+# Ignore application configuration
+/config/application.yml
+
+# Ignore all of the cache files
+/tmp/cache/*
+!/tmp/cache/.keep
+
+# Ignore all of the sockets
+/tmp/sockets/*
+!/tmp/sockets/.keep
+
+# Ignore all of the pids
+/tmp/pids/*
+!/tmp/pids/.keep
+
+# Ignore all of the bootsnap files
+/tmp/cache/bootsnap/*
+
+# Ignore environment variables
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# Ignore database files
+*.sqlite3
+*.sqlite3-*
+
+# Ignore coverage reports
+/coverage/
+
+# Ignore bundle config
+/.bundle
+
+# Ignore all .byebug_history files
+.byebug_history
+
+# Ignore node_modules
+node_modules/
+
+# Ignore precompiled javascript packs
+/public/packs
+/public/packs-test
+
+# Ignore yarn files
+.yarn-integrity 
