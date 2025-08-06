@@ -1,0 +1,11 @@
+services:
+  - type: web
+    name: test-feature-app
+    runtime: ruby
+    buildCommand: bundle install
+    startCommand: bundle exec rails server -p $PORT
+    envVars:
+      - key: RAILS_ENV
+        value: production
+      - key: RAILS_MASTER_KEY
+        sync: false 
