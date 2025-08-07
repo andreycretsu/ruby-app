@@ -3,7 +3,7 @@ services:
     name: test-feature-app
     runtime: ruby
     buildCommand: bundle install
-    startCommand: bundle exec rails db:migrate && bundle exec rails assets:precompile && bundle exec rails server -p $PORT -e production
+    startCommand: bundle exec rails server -p $PORT -e production
     envVars:
       - key: RAILS_ENV
         value: production
