@@ -103,3 +103,36 @@ Completed 200 OK in 10ms (Views: 2.2ms | ActiveRecord: 0.0ms (0 queries, 0 cache
 
 
 Started GET "/assets/application-8b441ae0.css" for ::1 at 2025-08-07 01:47:06 +0300
+Started GET "/" for ::1 at 2025-08-07 01:47:49 +0300
+Processing by HomeController#index as */*
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.4ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 1.1ms | GC: 0.0ms)
+Completed 200 OK in 10ms (Views: 1.5ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/mcp/components" for ::1 at 2025-08-07 01:47:53 +0300
+  
+ActionController::RoutingError (No route matches [GET] "/mcp/components"):
+  
+Started GET "/" for ::1 at 2025-08-07 01:48:02 +0300
+Processing by HomeController#index as */*
+  Rendering layout layouts/application.html.erb
+  Rendering home/index.html.erb within layouts/application
+  Rendered home/index.html.erb within layouts/application (Duration: 0.3ms | GC: 0.0ms)
+  Rendered layout layouts/application.html.erb (Duration: 1.7ms | GC: 0.0ms)
+Completed 200 OK in 14ms (Views: 2.2ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+
+Started GET "/home" for ::1 at 2025-08-07 01:48:06 +0300
+  
+ActionController::RoutingError (No route matches [GET] "/home"):
+  
+Started GET "/up" for ::1 at 2025-08-07 01:48:11 +0300
+Processing by Rails::HealthController#show as */*
+  Rendering html template
+  Rendered html template (Duration: 0.4ms | GC: 0.0ms)
+Completed 200 OK in 10ms (Views: 2.5ms | ActiveRecord: 0.0ms (0 queries, 0 cached) | GC: 0.0ms)
+
+

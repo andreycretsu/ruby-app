@@ -38,5 +38,10 @@ module TestFeatureApp
 
     # Don't generate system test files.
     config.generators.system_tests = nil
+    
+    # Handle secret key base for production
+    if Rails.env.production?
+      config.secret_key_base = ENV['SECRET_KEY_BASE']
+    end
   end
 end
